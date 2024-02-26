@@ -11,6 +11,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 许可证助手
+ *
  * @author noear
  * @since 2.7
  */
