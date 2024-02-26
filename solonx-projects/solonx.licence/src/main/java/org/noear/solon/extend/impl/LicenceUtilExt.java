@@ -53,7 +53,7 @@ public class LicenceUtilExt extends LicenceUtil {
             }
 
             if (description == null) {
-                description = "Licence: Unauthorized (with legal risks)";
+                description = "Licence (for Solon-EE): Unauthorized (with legal risks)";
             }
         }
 
