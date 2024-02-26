@@ -13,15 +13,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Rsa 内部小工具
+ *
  * @author noear
  * @since 2.7
  */
 public class RsaUtil {
-    private static RsaUtil global = new RsaUtil(512);
-    public static RsaUtil global() {
-        return global;
-    }
-
     private static final String ALGORITHM = "RSA";
     private static final String PUBLICK_KEY = "PUBLICK_KEY";
     private static final String PRIVATE_KEY = "PRIVATE_KEY";
@@ -29,13 +26,7 @@ public class RsaUtil {
     /**
      * 密钥长度（常见为1024）
      */
-    private int keySize;
-
-    public RsaUtil() {
-        keySize = 1024;
-    }
-
-
+    private final int keySize;
     public RsaUtil(int keySize) {
         this.keySize = keySize;
     }
