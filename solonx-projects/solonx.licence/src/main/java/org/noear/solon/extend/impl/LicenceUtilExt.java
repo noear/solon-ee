@@ -43,7 +43,7 @@ public class LicenceUtilExt extends LicenceUtil {
                             } else {
                                 buf.append("Edition=Enterprise Premium Edition, ");
                             }
-                            buf.append("Authorized=").append(licence[2]);
+                            buf.append("Subscribe=").append(licence[2]);
                             description = buf.toString();
                         }
                     }
