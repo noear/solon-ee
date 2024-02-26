@@ -20,5 +20,7 @@
     <modules>
         <module>solonx-parent</module>
         <module>solonx-projects</module>
+
+        <module>__test</module>
     </modules>
 </project>

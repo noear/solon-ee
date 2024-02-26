@@ -22,7 +22,7 @@
         <dependencies>
             <dependency>
                 <groupId>org.noear</groupId>
-                <artifactId>licence</artifactId>
+                <artifactId>solonx.licence</artifactId>
                 <version>${solonee.version}</version>
             </dependency>
         </dependencies>

@@ -30,13 +30,13 @@ public class LicenceUtilExt extends LicenceUtil {
                     String licenceStr = LicenceHelper.licenceDecode(appLicence, publicKey);
                     String[] licence = licenceStr.split(",");
 
-                    if (licence.length == 3) {
+                    if (licence.length >= 3) {
                         int edition = Integer.parseInt(licence[1]);
                         if (edition == 2 || edition == 3) {
                             //e=0 Community Edition, 2 Enterprise Premium Edition, 3 Enterprise Ultimate Edition
 
                             StringBuilder buf = new StringBuilder();
-                            buf.append("Licence: ");
+                            buf.append("Licence (for Solon-EE): ");
                             buf.append("SN=").append(licence[0]).append(", ");
                             if (edition == 3) {
                                 buf.append("Edition=Enterprise Ultimate Edition, ");
