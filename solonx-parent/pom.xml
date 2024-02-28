@@ -12,10 +12,11 @@
     </parent>
 
     <artifactId>solonx-parent</artifactId>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <properties>
-        <solonee.version>2.7.1</solonee.version>
+        <solonee.version>1.0.0</solonee.version>
     </properties>
 
     <dependencyManagement>
