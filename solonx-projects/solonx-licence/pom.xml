@@ -11,7 +11,7 @@
         <relativePath>../../solonx-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>solonx.licence</artifactId>
+    <artifactId>solonx-licence</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
