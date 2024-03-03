@@ -19,8 +19,8 @@ public class LicenceUtils {
 
     private String sn;
     private int edition;
-    private String subscribe;
     private String version;
+    private String subscribe;
 
     public String getSn() {
         return sn;
@@ -67,10 +67,11 @@ public class LicenceUtils {
                     String[] licence = licenceStr.split(",");
 
                     if (licence.length >= 3) {
+                        //0:sn,1:e,2:v,3:t,4:m,5:o
                         sn = licence[0];
                         edition = Integer.parseInt(licence[1]);
-                        subscribe = licence[2];
-                        version = licence[3];
+                        version = licence[2];
+                        subscribe = licence[3];
 
                         if (edition > 10) {
                             //e=0 Community Edition, 21.Enterprise Standard edition, 22 Enterprise Premium Edition, 23 Enterprise Ultimate Edition
