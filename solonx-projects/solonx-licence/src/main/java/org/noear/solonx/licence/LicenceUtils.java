@@ -37,6 +37,8 @@ public class LicenceUtils {
             return "Enterprise Premium Edition";
         } else if (edition == 21) {
             return "Enterprise Standard edition";
+        } else if (edition > 0) {
+            return "Unknown Edition";
         } else {
             return "Community Edition";
         }
@@ -67,20 +69,20 @@ public class LicenceUtils {
                     String[] licence = licenceStr.split(",");
 
                     if (licence.length >= 3) {
-                        //0:sn,1:e,2:v,3:t,4:m,5:o
+                        // 0:sn,1:e,2:v,3:t,4:m,5:c
                         sn = licence[0];
                         edition = Integer.parseInt(licence[1]);
                         version = licence[2];
                         subscribe = licence[3];
 
-                        if (edition > 10) {
+                        if (edition > 0) {
                             //e=0 Community Edition, 21.Enterprise Standard edition, 22 Enterprise Premium Edition, 23 Enterprise Ultimate Edition
 
                             StringBuilder buf = new StringBuilder();
                             buf.append("Licence (for Solon-EE): ");
-                            buf.append("SN=").append(licence[0]).append(", ");
+                            buf.append("SN=").append(getSn()).append(", ");
                             buf.append("E=").append(getEditionName()).append(", ");
-                            buf.append("T=").append(subscribe);
+                            buf.append("T=").append(getSubscribe());
 
                             isValid = true;
                             description = buf.toString();
