@@ -17,7 +17,7 @@ public class WebServiceContainerInitializerImpl implements ServletContainerIniti
     @Override
     public void onStartup(Set<Class<?>> set, ServletContext servletContext) throws ServletException {
         //@WebServlet(name = "ws", urlPatterns = "/ws/*", loadOnStartup = 0)
-        String path = Solon.cfg().get("solonx.webservices.path");
+        String path = Solon.cfg().get("server.webservices.path");
 
         if (Utils.isEmpty(path)) {
             path = "/ws/*";

@@ -1,0 +1,5 @@
+示例：
+
+```yaml
+solon.app.licence: "3GcYNYavqrM99aPC8QigWl24lvc8LpjD6R+J2WR8OTCEtz4ARvwJ0uEcmA/ICdkGNp+siL4rzAE5dhGY066kyZSaZCpgTiJsd/LGBOj288i6Fx7HWmDTWTO1NJjrTIhjdcSRBys8YtMn41YTouizCMG+VrEEtKCjHiE1wEFRLjGDYVx8V0EiG2rYVwqteHstBdEdCTbK1T7gvLzESZDikw=="
+```
