@@ -12,11 +12,11 @@
     </parent>
 
     <artifactId>solonx-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-M1</version>
     <packaging>pom</packaging>
 
     <properties>
-        <solonee.version>1.0.0</solonee.version>
+        <solonx.version>1.0.0-M1</solonx.version>
     </properties>
 
     <dependencyManagement>
@@ -24,7 +24,13 @@
             <dependency>
                 <groupId>org.noear</groupId>
                 <artifactId>solonx-licence</artifactId>
-                <version>${solonee.version}</version>
+                <version>${solonx.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.noear</groupId>
+                <artifactId>solonx-webservices</artifactId>
+                <version>${solonx.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
