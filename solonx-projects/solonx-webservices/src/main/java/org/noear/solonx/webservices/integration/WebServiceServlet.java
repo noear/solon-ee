@@ -10,9 +10,6 @@ import org.noear.solonx.webservices.WebServiceHelper;
 
 import javax.jws.WebService;
 import javax.servlet.ServletConfig;
-import javax.servlet.annotation.WebServlet;
-
-@WebServlet(name = "ws", urlPatterns = "/ws/*", loadOnStartup = 0)
 public class WebServiceServlet extends CXFNonSpringServlet {
     @Override
     protected void loadBus(ServletConfig sc) {

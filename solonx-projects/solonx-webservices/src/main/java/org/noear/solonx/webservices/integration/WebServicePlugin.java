@@ -5,6 +5,7 @@ import org.noear.solon.core.Plugin;
 import org.noear.solonx.webservices.WebServiceReference;
 
 import javax.jws.WebService;
+import javax.servlet.ServletContainerInitializer;
 
 /**
  * @author noear
@@ -16,7 +17,7 @@ public class WebServicePlugin implements Plugin {
         WebServiceBeanBuilder wsBeanBuilder = new WebServiceBeanBuilder();
 
         //注册 Bean
-        context.wrapAndPut(WebServiceServlet.class, new WebServiceServlet());
+        context.wrapAndPut(ServletContainerInitializer.class, new WebServiceContainerInitializerImpl());
         context.wrapAndPut(WebServiceBeanBuilder.class, wsBeanBuilder);
 
         //添加 Anno 处理
