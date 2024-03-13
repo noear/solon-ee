@@ -17,6 +17,6 @@
 
     <modules>
         <module>solonx-licence</module>
-        <module>solonx-web-webservice</module>
+        <module>solonx-webservices</module>
     </modules>
 </project>
