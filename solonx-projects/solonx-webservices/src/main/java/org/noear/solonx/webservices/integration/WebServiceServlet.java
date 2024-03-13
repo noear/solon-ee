@@ -6,7 +6,7 @@ import org.apache.cxf.transport.servlet.CXFNonSpringServlet;
 import org.noear.solon.Solon;
 import org.noear.solon.Utils;
 import org.noear.solon.core.BeanWrap;
-import org.noear.solonx.webservices.utils.WebServiceHelper;
+import org.noear.solonx.webservices.WebServiceHelper;
 
 import javax.jws.WebService;
 import javax.servlet.ServletConfig;
@@ -33,10 +33,9 @@ public class WebServiceServlet extends CXFNonSpringServlet {
         WebServiceBeanBuilder wsBeanBuilder = Solon.context().getBean(WebServiceBeanBuilder.class);
 
         for (BeanWrap bw : wsBeanBuilder.getWsBeanWarps()) {
-            // 对于接口才能执行以下代码
-
             // 获取 name 属性
-            String name = bw.clz().getAnnotation(WebService.class).name();
+            WebService anno = bw.clz().getAnnotation(WebService.class);
+            String name = Utils.annoAlias(anno.name(), anno.serviceName());
             // 获取 Web 服务地址
             String wsAddress = getAddress(name, bw.clz());
             // 获取 Web 服务实现类（找到唯一的实现类）

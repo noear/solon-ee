@@ -2,6 +2,7 @@ package org.noear.solonx.webservices.integration;
 
 import org.noear.solon.core.AppContext;
 import org.noear.solon.core.Plugin;
+import org.noear.solonx.webservices.WebServiceReference;
 
 import javax.jws.WebService;
 
@@ -20,5 +21,6 @@ public class WebServicePlugin implements Plugin {
 
         //添加 Anno 处理
         context.beanBuilderAdd(WebService.class, wsBeanBuilder);
+        context.beanInjectorAdd(WebServiceReference.class, new WebServiceReferenceBeanInjector());
     }
 }

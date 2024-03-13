@@ -1,13 +1,12 @@
-package org.noear.solonx.webservices.utils;
+package org.noear.solonx.webservices;
 
-import org.apache.cxf.frontend.ClientProxyFactoryBean;
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;
 
-import javax.jws.WebService;
-import javax.xml.namespace.QName;
 
 /**
+ * WS 助手
+ *
  * @author noear
  * @since 1.0
  */
