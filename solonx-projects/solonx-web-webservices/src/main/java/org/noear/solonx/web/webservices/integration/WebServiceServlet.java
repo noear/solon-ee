@@ -1,4 +1,4 @@
-package org.noear.solonx.webservices.integration;
+package org.noear.solonx.web.webservices.integration;
 
 import org.apache.cxf.Bus;
 import org.apache.cxf.BusFactory;
@@ -6,7 +6,7 @@ import org.apache.cxf.transport.servlet.CXFNonSpringServlet;
 import org.noear.solon.Solon;
 import org.noear.solon.Utils;
 import org.noear.solon.core.BeanWrap;
-import org.noear.solonx.webservices.WebServiceHelper;
+import org.noear.solonx.web.webservices.WebServiceHelper;
 
 import javax.jws.WebService;
 import javax.servlet.ServletConfig;

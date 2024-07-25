@@ -1,9 +1,9 @@
-package org.noear.solonx.webservices.integration;
+package org.noear.solonx.web.webservices.integration;
 
 import org.noear.solon.core.BeanInjector;
 import org.noear.solon.core.VarHolder;
-import org.noear.solonx.webservices.WebServiceHelper;
-import org.noear.solonx.webservices.WebServiceReference;
+import org.noear.solonx.web.webservices.WebServiceReference;
+import org.noear.solonx.web.webservices.WebServiceHelper;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

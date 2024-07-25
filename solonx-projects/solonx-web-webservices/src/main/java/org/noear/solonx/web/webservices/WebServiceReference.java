@@ -1,4 +1,4 @@
-package org.noear.solonx.webservices;
+package org.noear.solonx.web.webservices;
 
 import java.lang.annotation.*;
 

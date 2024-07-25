@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.noear</groupId>
         <artifactId>solonx-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <relativePath>../solonx-parent/pom.xml</relativePath>
     </parent>
 
@@ -17,6 +17,6 @@
 
     <modules>
         <module>solonx-licence</module>
-        <module>solonx-webservices</module>
+        <module>solonx-web-webservices</module>
     </modules>
 </project>

@@ -1,9 +1,9 @@
-package org.noear.solonx.webservices.integration;
+package org.noear.solonx.web.webservices.integration;
 
 import org.noear.solon.core.AppContext;
 import org.noear.solon.core.Plugin;
-import org.noear.solonx.licence.LicenceUtils;
-import org.noear.solonx.webservices.WebServiceReference;
+import org.noear.solonx.licence.LicenceInfo;
+import org.noear.solonx.web.webservices.WebServiceReference;
 
 import javax.jws.WebService;
 import javax.servlet.ServletContainerInitializer;
@@ -16,7 +16,7 @@ public class WebServicePlugin implements Plugin {
     @Override
     public void start(AppContext context) throws Throwable {
         //避免补排除
-        LicenceUtils.getInstance();
+        LicenceInfo.getInstance();
 
         WebServiceBeanBuilder wsBeanBuilder = new WebServiceBeanBuilder();
 

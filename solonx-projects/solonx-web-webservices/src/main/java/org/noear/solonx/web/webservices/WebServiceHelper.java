@@ -1,4 +1,4 @@
-package org.noear.solonx.webservices;
+package org.noear.solonx.web.webservices;
 
 import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 import org.apache.cxf.jaxws.JaxWsServerFactoryBean;

@@ -4,7 +4,7 @@ package demo.client2;
 import org.noear.solon.Solon;
 import org.noear.solon.annotation.Component;
 import org.noear.solon.core.bean.LifecycleBean;
-import org.noear.solonx.webservices.WebServiceReference;
+import org.noear.solonx.web.webservices.WebServiceReference;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

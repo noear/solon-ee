@@ -1,7 +1,7 @@
 package demo.client;
 
 
-import org.noear.solonx.webservices.WebServiceHelper;
+import org.noear.solonx.web.webservices.WebServiceHelper;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

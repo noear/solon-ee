@@ -1,4 +1,4 @@
-package org.noear.solonx.webservices.integration;
+package org.noear.solonx.web.webservices.integration;
 
 import org.noear.solon.core.BeanBuilder;
 import org.noear.solon.core.BeanWrap;
