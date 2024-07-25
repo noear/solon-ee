@@ -16,7 +16,7 @@ public class WebServicePlugin implements Plugin {
     @Override
     public void start(AppContext context) throws Throwable {
         //避免补排除
-        LicenceInfo.getInstance();
+        LicenceInfo.check();
 
         WebServiceBeanBuilder wsBeanBuilder = new WebServiceBeanBuilder();
 
