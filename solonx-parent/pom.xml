@@ -7,16 +7,16 @@
     <parent>
         <groupId>org.noear</groupId>
         <artifactId>solon-parent</artifactId>
-        <version>2.9.2</version>
+        <version>3.0.0</version>
         <relativePath />
     </parent>
 
     <artifactId>solonx-parent</artifactId>
-    <version>1.0.2</version>
+    <version>1.1.0</version>
     <packaging>pom</packaging>
 
     <properties>
-        <solonx.version>1.0.2</solonx.version>
+        <solonx.version>1.1.0</solonx.version>
     </properties>
 
     <dependencyManagement>
