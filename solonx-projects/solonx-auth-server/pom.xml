@@ -8,17 +8,17 @@
         <groupId>org.noear</groupId>
         <artifactId>solonx-parent</artifactId>
         <version>1.1.0</version>
-        <relativePath>../solonx-parent/pom.xml</relativePath>
+        <relativePath>../../solonx-parent/pom.xml</relativePath>
     </parent>
 
-    <groupId>org.noear.bundle</groupId>
-    <artifactId>solonx-projects</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>solonx-auth-server</artifactId>
+    <packaging>jar</packaging>
 
-    <modules>
-        <module>solonx-licence</module>
-        <module>solonx-web-webservices</module>
-        <module>solonx-auth-client</module>
-        <module>solonx-auth-server</module>
-    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>solonx-licence</artifactId>
+        </dependency>
+    </dependencies>
 </project>
